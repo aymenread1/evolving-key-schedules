@@ -1,0 +1,18 @@
+{
+ "verified_step": true,
+ "verified_update": true,
+ "GIFT-64": {
+  "area_um2": 817.152,
+  "GE": 1024,
+  "GE_flipflops": 725,
+  "GE_logic": 299,
+  "flip_flops": 128
+ },
+ "GAKS-GIFT": {
+  "area_um2": 1701.07,
+  "GE": 2132,
+  "GE_flipflops": 759,
+  "GE_logic": 1372,
+  "flip_flops": 134
+ }
+}
