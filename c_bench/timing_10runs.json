@@ -1,0 +1,192 @@
+[
+ {
+  "DES": {
+   "ns_per_key": 118.3,
+   "tsc_cycles_per_key": 344
+  },
+  "GAKS-DES": {
+   "ns_per_key": 271.1,
+   "tsc_cycles_per_key": 787
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.1,
+   "tsc_cycles_per_key": 235
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 290.6,
+   "tsc_cycles_per_key": 844
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.2,
+   "tsc_cycles_per_key": 343
+  },
+  "GAKS-DES": {
+   "ns_per_key": 269.7,
+   "tsc_cycles_per_key": 783
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.5,
+   "tsc_cycles_per_key": 237
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 289.8,
+   "tsc_cycles_per_key": 842
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.1,
+   "tsc_cycles_per_key": 343
+  },
+  "GAKS-DES": {
+   "ns_per_key": 268.3,
+   "tsc_cycles_per_key": 779
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.1,
+   "tsc_cycles_per_key": 236
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 291.9,
+   "tsc_cycles_per_key": 848
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.0,
+   "tsc_cycles_per_key": 343
+  },
+  "GAKS-DES": {
+   "ns_per_key": 267.0,
+   "tsc_cycles_per_key": 775
+  },
+  "PRESENT-80": {
+   "ns_per_key": 80.9,
+   "tsc_cycles_per_key": 235
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 290.5,
+   "tsc_cycles_per_key": 843
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 117.7,
+   "tsc_cycles_per_key": 342
+  },
+  "GAKS-DES": {
+   "ns_per_key": 268.0,
+   "tsc_cycles_per_key": 778
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.9,
+   "tsc_cycles_per_key": 238
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 290.4,
+   "tsc_cycles_per_key": 843
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.0,
+   "tsc_cycles_per_key": 343
+  },
+  "GAKS-DES": {
+   "ns_per_key": 268.0,
+   "tsc_cycles_per_key": 778
+  },
+  "PRESENT-80": {
+   "ns_per_key": 80.9,
+   "tsc_cycles_per_key": 235
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 289.9,
+   "tsc_cycles_per_key": 842
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 119.5,
+   "tsc_cycles_per_key": 347
+  },
+  "GAKS-DES": {
+   "ns_per_key": 267.2,
+   "tsc_cycles_per_key": 776
+  },
+  "PRESENT-80": {
+   "ns_per_key": 82.6,
+   "tsc_cycles_per_key": 240
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 290.8,
+   "tsc_cycles_per_key": 844
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 117.3,
+   "tsc_cycles_per_key": 341
+  },
+  "GAKS-DES": {
+   "ns_per_key": 266.8,
+   "tsc_cycles_per_key": 775
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.9,
+   "tsc_cycles_per_key": 238
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 294.6,
+   "tsc_cycles_per_key": 855
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.5,
+   "tsc_cycles_per_key": 344
+  },
+  "GAKS-DES": {
+   "ns_per_key": 268.5,
+   "tsc_cycles_per_key": 780
+  },
+  "PRESENT-80": {
+   "ns_per_key": 80.9,
+   "tsc_cycles_per_key": 235
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 289.7,
+   "tsc_cycles_per_key": 841
+  },
+  "acc": 12284871590361828727
+ },
+ {
+  "DES": {
+   "ns_per_key": 118.3,
+   "tsc_cycles_per_key": 344
+  },
+  "GAKS-DES": {
+   "ns_per_key": 267.4,
+   "tsc_cycles_per_key": 777
+  },
+  "PRESENT-80": {
+   "ns_per_key": 81.4,
+   "tsc_cycles_per_key": 237
+  },
+  "GAKS-PRESENT": {
+   "ns_per_key": 291.0,
+   "tsc_cycles_per_key": 845
+  },
+  "acc": 12284871590361828727
+ }
+]

@@ -1,0 +1,15 @@
+{
+ "GIFT-64": {
+  "cycles_median": 93.0,
+  "ns_median": 32.1
+ },
+ "GAKS-GIFT": {
+  "cycles_median": 1091.0,
+  "ns_median": 375.55
+ },
+ "ratio_range": [
+  11.595744680851064,
+  11.741935483870968
+ ],
+ "match": true
+}
