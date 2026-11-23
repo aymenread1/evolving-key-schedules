@@ -1,0 +1,192 @@
+{
+ "baseline": {
+  "settings": {
+   "lambda_": 0.5,
+   "chi_tol": 0.15,
+   "w_det": 5,
+   "w_rho": 5
+  },
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.49896825396825295,
+   "sig_K1": 4,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.019749030510470337
+  },
+  "active_terms": {
+   "avalanche_terms": 0.001530783517019827,
+   "sac_terms": 0.07060150873093378,
+   "det_fraction": 0.0,
+   "chi_max": 0.04229445684523814,
+   "chi_excess_over_0_15": 0.0,
+   "rho": 0.019749030510470337,
+   "rho_excess": 0.0,
+   "cost_term_lambda1": 0.13664596273291926
+  },
+  "final_w7": {
+   "cost": 46,
+   "a_min": 0.4989756944444457,
+   "sig_K1": 0,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.03355910018133163
+  }
+ },
+ "chi0.075": {
+  "settings": {
+   "lambda_": 0.5,
+   "chi_tol": 0.075,
+   "w_det": 5.0,
+   "w_rho": 5.0
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.4990004960317437,
+   "sig_K1": 2,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.022548785433262008
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.4992286706349193,
+   "sig_K1": 0,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.02400761421925907
+  }
+ },
+ "chi0.30": {
+  "settings": {
+   "lambda_": 0.5,
+   "chi_tol": 0.3,
+   "w_det": 5.0,
+   "w_rho": 5.0
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.4990290178571461,
+   "sig_K1": 2,
+   "sig_K2_16": 5,
+   "T_lin": 8,
+   "rho": 0.019416332464457713
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.49911086309523733,
+   "sig_K1": 5,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.020390130491495514
+  }
+ },
+ "lam0.25": {
+  "settings": {
+   "lambda_": 0.25,
+   "chi_tol": 0.15,
+   "w_det": 5.0,
+   "w_rho": 5.0
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.49934151785714415,
+   "sig_K1": 6,
+   "sig_K2_16": 3,
+   "T_lin": 8,
+   "rho": 0.02539645877133079
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.49921254960317474,
+   "sig_K1": 3,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.021300071445540605
+  }
+ },
+ "lam1.0": {
+  "settings": {
+   "lambda_": 1.0,
+   "chi_tol": 0.15,
+   "w_det": 5.0,
+   "w_rho": 5.0
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.4990947420634928,
+   "sig_K1": 2,
+   "sig_K2_16": 1,
+   "T_lin": 8,
+   "rho": 0.018881084802391927
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.4987450396825403,
+   "sig_K1": 1,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.021272792326977052
+  }
+ },
+ "w10": {
+  "settings": {
+   "lambda_": 0.5,
+   "chi_tol": 0.15,
+   "w_det": 10.0,
+   "w_rho": 10.0
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.4993725198412698,
+   "sig_K1": 5,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.026397866279630096
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.49879836309523995,
+   "sig_K1": 0,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.026192825241096708
+  }
+ },
+ "w2.5": {
+  "settings": {
+   "lambda_": 0.5,
+   "chi_tol": 0.15,
+   "w_det": 2.5,
+   "w_rho": 2.5
+  },
+  "w": 6,
+  "sboxes_per_step": 2,
+  "ga_output": {
+   "cost": 44,
+   "a_min": 0.4990947420634916,
+   "sig_K1": 2,
+   "sig_K2_16": 1,
+   "T_lin": 8,
+   "rho": 0.0229868753927494
+  },
+  "plus_one_warmup": {
+   "cost": 46,
+   "a_min": 0.4987574404761908,
+   "sig_K1": 1,
+   "sig_K2_16": 0,
+   "T_lin": 8,
+   "rho": 0.025670454110181092
+  }
+ }
+}
