@@ -26,7 +26,25 @@ def to_bits(words, nbits):
     b = np.unpackbits(words.astype(">u8").view(np.uint8).reshape(words.shape + (8,)), axis=-1)[..., 64 - nbits:]
     return b.reshape(-1)
 
+def gift_stream(cfg, s):
+    import gift_core as GC
+    per = -(-NBITS // 896); rng = np.random.default_rng(5000 + s)
+    if cfg.endswith("counter"):
+        L = np.arange(s * per, (s + 1) * per, dtype=np.uint64); H = np.zeros_like(L)
+    else:
+        H = rng.integers(0, 2**63, per, dtype=np.uint64) * U(2) + rng.integers(0, 2, per, dtype=np.uint64)
+        L = rng.integers(0, 2**63, per, dtype=np.uint64) * U(2) + rng.integers(0, 2, per, dtype=np.uint64)
+    if cfg.startswith("GAKSGIFT"):
+        ev = json.load(open("results/gift/eval.json")); g = json.load(open("results/gift/ga_gift_nb2_s7.json"))
+        prm = GC.GAKSGiftParams.from_bits(g["chromosome"], g["nblocks"]); prm.w = ev["final_w"]
+        rk = GC.ks_gaks_gift(H, L, prm)
+    else:
+        rk = GC.ks_gift(H, L)
+    return to_bits(rk, 32)[:NBITS]
+
 def stream(cfg, s):
+    if "GIFT" in cfg:
+        return gift_stream(cfg, s)
     rng = np.random.default_rng(1000 + s)
     if "PRESENT" in cfg:
         per = -(-NBITS // 2048)
@@ -39,7 +57,12 @@ def stream(cfg, s):
         k = counter_to_des_key(np.arange(s * per, (s + 1) * per, dtype=np.uint64))
     else:
         k = rng.integers(0, 2**63, per, dtype=np.uint64) * U(2) + rng.integers(0, 2, per, dtype=np.uint64)
-    sk = ks_des(k) if cfg.startswith("DES") else ks_gaks(k, PRM)
+    if cfg.startswith("GAKSHW"):
+        g = json.load(open("results/hw_variant/ga_des_hw2.json"))
+        hw = GAKSParams.from_bits(g["chromosome"], nblocks=g["nblocks"], rc=RC_CTR_DES)
+        sk = ks_gaks(k, hw)
+    else:
+        sk = ks_des(k) if cfg.startswith("DES") else ks_gaks(k, PRM)
     return to_bits(sk, 48)[:NBITS]
 
 def main(cfg):

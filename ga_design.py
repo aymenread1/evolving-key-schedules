@@ -9,6 +9,9 @@ from gaks_core import *
 
 import os
 LAMBDA = float(os.environ.get("LAMBDA", 0.50))      # weight of the implementation-cost penalty
+CHI_TOL = float(os.environ.get("CHI_TOL", 0.15))    # tolerance of the per-round chi-square SAC term
+W_DET = float(os.environ.get("W_DET", 5.0))         # weight of deterministic-cell term
+W_RHO = float(os.environ.get("W_RHO", 5.0))         # weight of round-key correlation term
 POP, GENS = 50, 80
 TOUR, PC, ELITE = 3, 0.9, 2
 N_DESIGN_KEYS = 128
@@ -45,8 +48,8 @@ def diffusion_metrics(base, flipped, nbits):
     det = (dev == 0.5).mean(axis=(0, 2)).max()              # deterministic (linear) cells, worst round
     # per-round chi-square SAC statistic: mean of z^2 = 4N(p-1/2)^2 is ~1 for an ideal function
     chi = (4 * x.shape[0] * (p - 0.5) ** 2).mean(axis=(0, 2)) - 1.0
-    chi_pen = max(0.0, float(chi.max()) - 0.15)             # tolerance ~5 standard deviations
-    return a_r, sac + 5.0 * det + chi_pen
+    chi_pen = max(0.0, float(chi.max()) - CHI_TOL)             # tolerance ~5 standard deviations
+    return a_r, sac + W_DET * det + chi_pen
 
 def des_fitness(prm, keys=DES_KEYS):
     base = ks_gaks(keys, prm)
@@ -56,7 +59,7 @@ def des_fitness(prm, keys=DES_KEYS):
     dev = np.abs(a_r - 0.5)
     cost = prm.sbox_count() / ((GAKSParams.MAXW + 16) * 14)
     ic = interkey_corr(ks_gaks(CORR_KEYS, prm))
-    icp = 5.0 * max(0.0, ic - 4.0 / np.sqrt(NC))
+    icp = W_RHO * max(0.0, ic - 4.0 / np.sqrt(NC))
     return -(dev.mean() + dev.max() + sac + icp) - LAMBDA * cost, dict(a_min=float(a_r.min()), sac=float(sac), interkey=ic, cost=prm.sbox_count())
 
 def present_fitness(prm, kh=P_H, kl=P_L):
@@ -73,11 +76,19 @@ def present_fitness(prm, kh=P_H, kl=P_L):
     dev = np.abs(a_r - 0.5)
     cost = prm.sbox_count() / ((GAKSPresentParams.MAXW + 31) * 20)
     ic = interkey_corr(ks_gaks_present(CORR_H, CORR_L, prm))
-    icp = 5.0 * max(0.0, ic - 4.0 / np.sqrt(NC))
+    icp = W_RHO * max(0.0, ic - 4.0 / np.sqrt(NC))
     return -(dev.mean() + dev.max() + sac + icp) - LAMBDA * cost, dict(a_min=float(a_r.min()), sac=float(sac), interkey=ic, cost=prm.sbox_count())
 
 def run(kind):
     P = GAKSParams if kind == "des" else GAKSPresentParams
+    NB = int(os.environ.get("NBLOCKS", "0")) or None             # cyclic gene blocks (DES only)
+    RCMODE = os.environ.get("RCMODE", "sha")                     # "sha" or "ctr" (DES only)
+    if kind == "des" and (NB or RCMODE != "sha"):
+        class P:                                                 # wrapper with the restricted encoding
+            NBITS = GAKSParams.nbits(NB)
+            @staticmethod
+            def from_bits(ch):
+                return GAKSParams.from_bits(ch, nblocks=NB, rc=(RC_CTR_DES if RCMODE == "ctr" else None))
     fit = des_fitness if kind == "des" else present_fitness
     L = P.NBITS
     PM = 2.0 / L
@@ -118,12 +129,12 @@ def run(kind):
     scores = np.array([F(c)[0] for c in pop])
     best = pop[np.argmax(scores)]
     prm = P.from_bits(best)
-    out = dict(kind=kind, lambda_=LAMBDA, pm_tail=PM_TAIL, pop=POP, gens=GENS, seed=SEED, n_design_keys=N_DESIGN_KEYS,
+    out = dict(nblocks=NB if kind == "des" else None, rcmode=RCMODE if kind == "des" else None, kind=kind, lambda_=LAMBDA, chi_tol=CHI_TOL, w_det=W_DET, w_rho=W_RHO, pm_tail=PM_TAIL, pop=POP, gens=GENS, seed=SEED, n_design_keys=N_DESIGN_KEYS,
                best_fitness=float(scores.max()), best_info=F(best)[1], params=prm.to_dict(),
                chromosome="".join(map(str, best.tolist())), history=hist,
                random_designs=dict(n=len(init_scores), mean=float(np.mean(init_scores)), std=float(np.std(init_scores)),
                                    best=float(np.max(init_scores)), worst=float(np.min(init_scores))))
-    suffix = "" if LAMBDA == 0.50 else f"_lambda{LAMBDA}"
+    suffix = os.environ.get("SUFFIX", "" if LAMBDA == 0.50 else f"_lambda{LAMBDA}")
     json.dump(out, open(f"results/ga_{kind}{suffix}.json", "w"), indent=1)
     print("saved", prm.to_dict())
 

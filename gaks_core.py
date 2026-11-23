@@ -116,23 +116,29 @@ class GAKSParams:
     STEP = 28 + 5 + 5
     NBITS = (MAXW + 16) * STEP + 14 + 3
 
-    def __init__(self, masks, alpha, beta, smask, w):
+    def __init__(self, masks, alpha, beta, smask, w, rc=None, nblocks=None):
         self.masks, self.alpha, self.beta = list(masks), list(alpha), list(beta)
         self.smask, self.w = int(smask), int(w)
+        self.rc = rc                      # None -> SHA-256 constants RC_DES; else a list of per-step constants
+        self.nblocks = nblocks            # None -> one gene block per step; k -> k blocks used cyclically
+
+    @staticmethod
+    def nbits(nblocks=None):
+        return (nblocks or (GAKSParams.MAXW + 16)) * GAKSParams.STEP + 14 + 3
 
     @classmethod
-    def from_bits(cls, bits):
+    def from_bits(cls, bits, nblocks=None, rc=None):
         bits = [int(b) for b in bits]
-        masks, alpha, beta = [], [], []
-        for i in range(cls.MAXW + 16):
+        nb = nblocks or (cls.MAXW + 16)
+        blocks = []
+        for i in range(nb):
             g = bits[i * cls.STEP:(i + 1) * cls.STEP]
-            masks.append(_bits_to_int(g[:28]))
-            alpha.append(1 + _bits_to_int(g[28:33]) % 27)
-            beta.append(1 + _bits_to_int(g[33:38]) % 27)
-        off = (cls.MAXW + 16) * cls.STEP
+            blocks.append((_bits_to_int(g[:28]), 1 + _bits_to_int(g[28:33]) % 27, 1 + _bits_to_int(g[33:38]) % 27))
+        steps = [blocks[t % nb] for t in range(cls.MAXW + 16)]
+        off = nb * cls.STEP
         smask = _bits_to_int(bits[off:off + 14])
         w = _bits_to_int(bits[off + 14:off + 17])
-        return cls(masks, alpha, beta, smask, w)
+        return cls([b[0] for b in steps], [b[1] for b in steps], [b[2] for b in steps], smask, w, rc=rc, nblocks=nblocks)
 
     def sbox_count(self):
         return (self.w + 16) * bin(self.smask).count("1")
@@ -155,6 +161,8 @@ def final_des_params(path="results/ga_des.json"):
     return p
 
 RC_DES = round_constants(GAKSParams.MAXW + 16, "GAKS-DES", 56)
+# hardware-friendly alternative: the 5-bit step counter t+1 added to the low bits of both halves
+RC_CTR_DES = [((t + 1) << 28) | (t + 1) for t in range(GAKSParams.MAXW + 16)]
 
 def sbox_layer(state, smask, nnib, sbox=PRESENT_S):
     for j in range(nnib):
@@ -182,7 +190,7 @@ def ks_gaks(keys, prm, use_rc=True):
         S = (C << U(28)) | D              # GA operator 2: nonlinear "mutation" (S-box layer)
         S = sbox_layer(S, prm.smask, 14)
         if use_rc:
-            S ^= U(RC_DES[t])             # round constant: breaks self-similarity
+            S ^= U(RC_DES[t] if prm.rc is None else prm.rc[t])   # round constant: breaks self-similarity
         C, D = S >> U(28), S & M28
         if r >= 0:
             out[:, r] = perm(S, PC2, 56)
