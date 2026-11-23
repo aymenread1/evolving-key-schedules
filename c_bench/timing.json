@@ -1,0 +1,1 @@
+{"DES":{"ns_per_key":117.8,"tsc_cycles_per_key":342},"GAKS-DES":{"ns_per_key":269.7,"tsc_cycles_per_key":783},"PRESENT-80":{"ns_per_key":82.3,"tsc_cycles_per_key":239},"GAKS-PRESENT":{"ns_per_key":293.7,"tsc_cycles_per_key":853},"acc":12284871590361828727}
