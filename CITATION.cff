@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Evolving Key Schedules Offline: code and data"
+authors:
+  - family-names: Mohammed
+    given-names: Ayman E.
+version: 1.0.0
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/aymenread1/evolving-key-schedules"
+keywords:
+  - key schedule
+  - genetic algorithm
+  - block cipher
+  - DES
+  - PRESENT
+  - related-key cryptanalysis

@@ -1,0 +1,8 @@
+{
+  "title": "Evolving Key Schedules Offline: code and data",
+  "upload_type": "software",
+  "description": "Code, GA parameters, seeds and raw results for the article 'Evolving Key Schedules Offline: A Cost-Aware Genetic Design of Deterministic, Nonlinear Round-Key Generation for Block Ciphers'.",
+  "creators": [{"name": "Mohammed, Ayman E."}],
+  "license": "MIT",
+  "keywords": ["key schedule", "genetic algorithm", "block cipher", "DES", "PRESENT", "related-key cryptanalysis"]
+}

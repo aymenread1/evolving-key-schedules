@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+c_bench/bench
+sts_official/streams/
+sts_official/reports/
+*.aux
+*.log
