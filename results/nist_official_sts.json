@@ -1,0 +1,1118 @@
+{
+ "DES-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 148,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 1,
+  "tests_total": 13
+ },
+ "DES-random": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.5333333333333333,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.16,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.7033333333333334,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.71,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 69,
+    "min_proportion": 0.4033333333333333,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.93,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9523809523809523,
+    "n_min": 21
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 1.0,
+    "n_min": 21
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 5,
+  "tests_total": 15
+ },
+ "GAKS-DES-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9738219895287958,
+    "n_min": 191
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9790575916230366,
+    "n_min": 191
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKS-DES-random": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9840425531914894,
+    "n_min": 188
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9787234042553191,
+    "n_min": 188
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKS-PRESENT-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.97,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9797979797979798,
+    "n_min": 198
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9797979797979798,
+    "n_min": 198
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKSGIFT-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9733333333333334,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9841269841269841,
+    "n_min": 189
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9788359788359788,
+    "n_min": 189
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKSGIFT-random": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9883040935672515,
+    "n_min": 171
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9824561403508771,
+    "n_min": 171
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.98,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKSHW-DES-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 1.0,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9733333333333334,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9798994974874372,
+    "n_min": 199
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9798994974874372,
+    "n_min": 199
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 15,
+  "tests_total": 15
+ },
+ "GAKSHW-DES-random": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9833333333333333,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 0,
+    "min_proportion": 0.9766666666666667,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9966666666666667,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9866666666666667,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 0,
+    "min_proportion": 0.9679144385026738,
+    "n_min": 187
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 0,
+    "min_proportion": 0.9732620320855615,
+    "n_min": 187
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 1,
+    "min_proportion": 0.9666666666666667,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.9933333333333333,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 14,
+  "tests_total": 15
+ },
+ "GIFT-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 148,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.9,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 0,
+  "tests_total": 13
+ },
+ "GIFT-random": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.6966666666666667,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.8333333333333334,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.4633333333333333,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.5966666666666667,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.02666666666666667,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 148,
+    "min_proportion": 0.21666666666666667,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "RandomExcursions": {
+    "subtests": 8,
+    "failed": 2,
+    "min_proportion": 0.8961038961038961,
+    "n_min": 77
+   },
+   "RandomExcursionsVariant": {
+    "subtests": 18,
+    "failed": 1,
+    "min_proportion": 0.935064935064935,
+    "n_min": 77
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 1,
+  "tests_total": 15
+ },
+ "PRESENT-counter": {
+  "tests": {
+   "Frequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "BlockFrequency": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "CumulativeSums": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Runs": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LongestRun": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Rank": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "FFT": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "NonOverlappingTemplate": {
+    "subtests": 148,
+    "failed": 148,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "OverlappingTemplate": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Universal": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "ApproximateEntropy": {
+    "subtests": 1,
+    "failed": 1,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "Serial": {
+    "subtests": 2,
+    "failed": 2,
+    "min_proportion": 0.0,
+    "n_min": 300
+   },
+   "LinearComplexity": {
+    "subtests": 1,
+    "failed": 0,
+    "min_proportion": 0.99,
+    "n_min": 300
+   }
+  },
+  "tests_passed": 1,
+  "tests_total": 13
+ }
+}

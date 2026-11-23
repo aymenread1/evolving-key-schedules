@@ -1,0 +1,11 @@
+{
+ "solver": "HiGHS 1.8.0 via scipy.optimize.milp (scipy 1.15.3)",
+ "options": {
+  "mip_rel_gap": 0,
+  "time_limit_s_PRESENT_trails": 150,
+  "time_limit_s_ks_only": 120,
+  "time_limit_s_full_GAKS_PRESENT": "120-170 (not closed)"
+ },
+ "hardware": "Intel Core i7-10700 @ 2.90 GHz, virtual machine with 2 vCPUs, Linux 6.8, Python 3.10.12, NumPy 2.2.6",
+ "max_solve_time_s": 70.8
+}
