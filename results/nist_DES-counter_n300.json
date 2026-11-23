@@ -1,0 +1,64 @@
+{
+ "config": "DES-counter",
+ "nseq": 300,
+ "nbits": 1000000,
+ "min_proportion": 0.9727663120603859,
+ "tests": [
+  {
+   "test": "Frequency",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "BlockFrequency",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "CumulativeSums(fwd)",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "CumulativeSums(rev)",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "Runs",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "LongestRun",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "ApproximateEntropy",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "Serial-1",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  },
+  {
+   "test": "Serial-2",
+   "proportion": 0.0,
+   "uniformity_p": 0.0,
+   "passed": false
+  }
+ ],
+ "passed_count": 0,
+ "seconds": 85.39157271385193
+}

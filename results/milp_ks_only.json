@@ -1,0 +1,25 @@
+[
+ {
+  "schedule": "gaks-des",
+  "steps": 7,
+  "optimal": true,
+  "seconds": 20.4,
+  "best_found": 0.0
+ },
+ {
+  "schedule": "gaks",
+  "steps": 7,
+  "optimal": true,
+  "seconds": 1.2,
+  "best_found": 0.0,
+  "lower_bound": 0.0
+ },
+ {
+  "schedule": "present",
+  "steps": 20,
+  "optimal": true,
+  "seconds": 0.0,
+  "best_found": 0.0,
+  "lower_bound": 0.0
+ }
+]

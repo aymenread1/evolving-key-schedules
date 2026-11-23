@@ -1,0 +1,64 @@
+{
+ "config": "GAKS-DES-random",
+ "nseq": 300,
+ "nbits": 1000000,
+ "min_proportion": 0.9727663120603859,
+ "tests": [
+  {
+   "test": "Frequency",
+   "proportion": 0.9933333333333333,
+   "uniformity_p": 0.15376333779556478,
+   "passed": true
+  },
+  {
+   "test": "BlockFrequency",
+   "proportion": 0.98,
+   "uniformity_p": 0.33979941648719475,
+   "passed": true
+  },
+  {
+   "test": "CumulativeSums(fwd)",
+   "proportion": 0.9933333333333333,
+   "uniformity_p": 0.7197465748240341,
+   "passed": true
+  },
+  {
+   "test": "CumulativeSums(rev)",
+   "proportion": 0.99,
+   "uniformity_p": 0.2896674903884787,
+   "passed": true
+  },
+  {
+   "test": "Runs",
+   "proportion": 0.9933333333333333,
+   "uniformity_p": 0.41902116661019284,
+   "passed": true
+  },
+  {
+   "test": "LongestRun",
+   "proportion": 0.9766666666666667,
+   "uniformity_p": 0.002623749945703029,
+   "passed": true
+  },
+  {
+   "test": "ApproximateEntropy",
+   "proportion": 0.9933333333333333,
+   "uniformity_p": 0.9903689077300377,
+   "passed": true
+  },
+  {
+   "test": "Serial-1",
+   "proportion": 0.9866666666666667,
+   "uniformity_p": 0.6993125708664081,
+   "passed": true
+  },
+  {
+   "test": "Serial-2",
+   "proportion": 0.9866666666666667,
+   "uniformity_p": 0.7727602750730935,
+   "passed": true
+  }
+ ],
+ "passed_count": 9,
+ "seconds": 79.31260371208191
+}

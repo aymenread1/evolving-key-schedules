@@ -1,0 +1,112 @@
+{
+ "GAKS-DES": {
+  "sboxes_per_step": 2,
+  "T_lin": 8,
+  "lower_bound": 7,
+  "steps_before_K1": 8,
+  "steps_total": 23,
+  "T_lin_all_starts": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   7,
+   9,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "guaranteed_active": 2,
+  "windows": [
+   8,
+   8
+  ]
+ },
+ "GAKS-PRESENT": {
+  "sboxes_per_step": 3,
+  "T_lin": 8,
+  "lower_bound": 7,
+  "steps_before_K1": 7,
+  "steps_total": 38,
+  "guaranteed_active": 4,
+  "windows": [
+   8,
+   8,
+   8,
+   8
+  ]
+ },
+ "PRESENT-80": {
+  "sboxes_per_step": 1,
+  "T_lin": 21,
+  "lower_bound": 20,
+  "steps_total": 31,
+  "guaranteed_active": 1,
+  "windows": [
+   21
+  ]
+ },
+ "DES": {
+  "sboxes_per_step": 0,
+  "T_lin": null,
+  "note": "no S-box: every key difference propagates linearly"
+ },
+ "des_tradeoff_random_designs": {
+  "1": {
+   "cost": 23,
+   "bound": 14,
+   "T_lin_min": 14,
+   "T_lin_median": 15.0
+  },
+  "2": {
+   "cost": 46,
+   "bound": 7,
+   "T_lin_min": 8,
+   "T_lin_median": 8.5
+  },
+  "3": {
+   "cost": 69,
+   "bound": 5,
+   "T_lin_min": 6,
+   "T_lin_median": 6.5
+  },
+  "4": {
+   "cost": 92,
+   "bound": 4,
+   "T_lin_min": 5,
+   "T_lin_median": 6.0
+  },
+  "5": {
+   "cost": 115,
+   "bound": 3,
+   "T_lin_min": 4,
+   "T_lin_median": 5.0
+  },
+  "7": {
+   "cost": 161,
+   "bound": 2,
+   "T_lin_min": 3,
+   "T_lin_median": 4.0
+  },
+  "14": {
+   "cost": 322,
+   "bound": 1,
+   "T_lin_min": 1,
+   "T_lin_median": 1.0
+  }
+ }
+}
