@@ -1,0 +1,117 @@
+{
+ "branch_number": 2,
+ "rows": [
+  {
+   "rounds": 1,
+   "related_key": false,
+   "optimal": true,
+   "value": 1.0,
+   "seconds": 0.0
+  },
+  {
+   "rounds": 1,
+   "related_key": true,
+   "optimal": true,
+   "value": 0.0,
+   "seconds": 0.0
+  },
+  {
+   "rounds": 2,
+   "related_key": false,
+   "optimal": true,
+   "value": 2.0,
+   "seconds": 0.4
+  },
+  {
+   "rounds": 2,
+   "related_key": true,
+   "optimal": true,
+   "value": 0.0,
+   "seconds": 0.0
+  },
+  {
+   "rounds": 3,
+   "related_key": false,
+   "optimal": true,
+   "value": 3.000000000000001,
+   "seconds": 0.5
+  },
+  {
+   "rounds": 3,
+   "related_key": true,
+   "optimal": true,
+   "value": 0.0,
+   "seconds": 0.1
+  },
+  {
+   "rounds": 4,
+   "related_key": false,
+   "optimal": true,
+   "value": 5.0,
+   "seconds": 2.9
+  },
+  {
+   "rounds": 4,
+   "related_key": true,
+   "optimal": true,
+   "value": 0.0,
+   "seconds": 0.1
+  },
+  {
+   "rounds": 5,
+   "related_key": false,
+   "optimal": true,
+   "value": 6.999999999999999,
+   "seconds": 10.7
+  },
+  {
+   "rounds": 5,
+   "related_key": true,
+   "optimal": true,
+   "value": 1.0,
+   "seconds": 0.2
+  },
+  {
+   "rounds": 6,
+   "related_key": false,
+   "optimal": true,
+   "value": 10.0,
+   "seconds": 33.1
+  },
+  {
+   "rounds": 6,
+   "related_key": true,
+   "optimal": true,
+   "value": 2.0,
+   "seconds": 2.4
+  },
+  {
+   "rounds": 7,
+   "related_key": false,
+   "optimal": true,
+   "value": 13.0,
+   "seconds": 206.9
+  },
+  {
+   "rounds": 7,
+   "related_key": true,
+   "optimal": true,
+   "value": 3.0,
+   "seconds": 57.7
+  }
+ ],
+ "gaks_ks_only": [
+  {
+   "gaks_ks_only_steps": 6,
+   "optimal": true,
+   "value": 0.0,
+   "seconds": 1.7
+  },
+  {
+   "gaks_ks_only_steps": 7,
+   "optimal": false,
+   "value": 14.0,
+   "seconds": 240.0
+  }
+ ]
+}
